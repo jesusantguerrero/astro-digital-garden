@@ -1,0 +1,17 @@
+{
+  "name": "remark-digital-garden",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "retext": "^8.1.0",
+    "unist-util-visit": "^4.1.0",
+    "vfile-reporter": "^7.0.3"
+  }
+}
