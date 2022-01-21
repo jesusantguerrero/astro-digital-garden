@@ -30,10 +30,20 @@
       },
       "dev": {
         "cache": false
+      },
+      "publish": {
+        "dependsOn": [
+          "test",
+          "build"
+        ],
+        "outputs": [
+          "dist/**"
+        ]
       }
     }
   },
   "devDependencies": {
-    "turbo": "^1.0.28"
+    "turbo": "^1.0.28",
+    "vitest": "^0.1.27"
   }
 }
