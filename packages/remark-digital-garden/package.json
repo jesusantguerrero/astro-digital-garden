@@ -3,8 +3,14 @@
   "version": "0.0.1",
   "description": "",
   "type": "module",
-  "main": "index.js",
-  "module": "dist/astro-remark-digital-garden.es.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
   "files": [
     "scripts/*",
     "src/*",

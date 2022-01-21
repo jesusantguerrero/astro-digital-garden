@@ -1,13 +1,13 @@
 // vite.config.js
-const path = require('path')
-const { defineConfig } = require('vite')
+import path from 'path';
+import { defineConfig } from 'vite';
 
-module.exports = defineConfig({
+export default defineConfig({
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'index.js'),
+      entry: path.resolve('src/index.js'),
       name: 'astro-remark-digital-garden',
-      fileName: (format) => `astro-remark-digital-garden.${format}.js`
+      fileName: (format) => `index.${format}.js`
     },
   }
 });
