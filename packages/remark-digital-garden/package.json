@@ -1,6 +1,6 @@
 {
   "name": "astro-remark-digital-garden",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "type": "module",
   "main": "./dist/index.umd.js",
@@ -32,6 +32,9 @@
     "vfile-reporter": "^7.0.3"
   },
   "devDependencies": {
-    "vite": "^2.7.2"
+    "@vitejs/plugin-vue": "^2.1.0",
+    "tippy.js": "^6.3.7",
+    "vite": "^2.7.2",
+    "vue": "^3.2.28"
   }
 }
