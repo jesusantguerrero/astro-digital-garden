@@ -5,6 +5,35 @@
   "author": "Jesus Guerrero <jesusant.guerrero@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "./packages/*"
-  ]
+    "packages/*",
+    "apps/*"
+  ],
+  "turbo": {
+    "baseBranch": "origin/master",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": [
+          ".next/**"
+        ]
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "devDependencies": {
+    "turbo": "^1.0.28"
+  }
 }
