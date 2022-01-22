@@ -1,0 +1,18 @@
+{
+    "npmClient": "yarn",
+    "packages": ["packages/*"],
+    "command": {
+        "publish": {
+        "message": "chore(release): publish"
+        },
+      "version": {
+        "exact": true
+      },
+      "publish": {
+        "npmClient": "npm",
+        "allowBranch": ["master", "canary"],
+        "registry": "https://registry.npmjs.org/"
+      }
+    },
+    "version": "2.1.6"
+  }

@@ -1,7 +1,10 @@
 {
   "name": "astro-digital-garden",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "test": "yarn turbo run test",
+    "build": "yarn turbo run build"
+  },
   "author": "Jesus Guerrero <jesusant.guerrero@gmail.com>",
   "license": "MIT",
   "workspaces": [
