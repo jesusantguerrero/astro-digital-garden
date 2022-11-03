@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "test": "yarn turbo run test",
+    "dev": "yarn turbo run dev",
     "build": "yarn turbo run build"
   },
   "author": "Jesus Guerrero <jesusant.guerrero@gmail.com>",
@@ -46,6 +47,7 @@
     }
   },
   "devDependencies": {
+    "lerna": "^4.0.0",
     "turbo": "^1.0.28",
     "vitest": "^0.1.27"
   }
